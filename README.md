@@ -33,3 +33,7 @@ This project uses data from the Framingham and Cleveland heart disease studies (
     3.  **Modeling:** Trained and evaluated multiple classifiers, including Logistic Regression, RandomForest, and XGBoost.
 * **Results:**
     * A baseline **Logistic Regression** model achieved a solid **Accuracy of 88%** and an **F1
+ 
+    * ## 👥 Contributors
+* Pushkaraj Gaikwad
+* Nidhi Raut
