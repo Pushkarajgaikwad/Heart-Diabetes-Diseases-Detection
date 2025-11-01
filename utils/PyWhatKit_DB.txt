@@ -1,0 +1,60 @@
+Date: 14/3/2024
+Time: 1:25
+Phone Number: +919960946675
+Message: Hello, this is a test message!
+--------------------
+Date: 14/3/2024
+Time: 1:25
+Phone Number: +919960946675
+Message: Hello, this is a test message!
+--------------------
+Date: 14/3/2024
+Time: 1:33
+Phone Number: +919960946675
+Message: Hello, this is a test message!
+--------------------
+Date: 14/3/2024
+Time: 1:34
+Phone Number: +919960946675
+Message: Hello, this is a test message!
+--------------------
+Date: 14/3/2024
+Time: 1:37
+Phone Number: +919960946675
+Message: Hello from Python! This is an instant WhatsApp message.
+--------------------
+Date: 14/3/2024
+Time: 1:38
+Phone Number: +919960946675
+Message: Hello from Python! This is an instant WhatsApp message.
+--------------------
+Date: 14/3/2024
+Time: 1:45
+Phone Number: +919960946675
+Message: Hello from Python! This is an instant WhatsApp message.
+--------------------
+Date: 14/3/2024
+Time: 1:47
+Phone Number: +919960946675
+Message: Hello from Python! This is an instant WhatsApp message.
+--------------------
+Date: 14/3/2024
+Time: 2:7
+Phone Number: +919960946675
+Message: Hello from Python! This is an automated WhatsApp message using pywhatkit (use responsibly).
+--------------------
+Date: 14/3/2024
+Time: 2:8
+Phone Number: +919960946675
+Message: Hello from Python! This is an automated WhatsApp message using pywhatkit (use responsibly).
+--------------------
+Date: 14/3/2024
+Time: 2:9
+Phone Number: +919960946675
+Message: Hello from Python! This is an automated WhatsApp message using pywhatkit (use responsibly).
+--------------------
+Date: 14/3/2024
+Time: 2:12
+Phone Number: +919960946675
+Message: Hello from Python! This is an automated WhatsApp message using pywhatkit (use responsibly).
+--------------------

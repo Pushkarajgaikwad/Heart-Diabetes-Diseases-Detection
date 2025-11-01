@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="icon" href="static/images/DocDiagno.png">
+        <title>Heart And Diabetes Prediction Website</title>
+        
+        <!-- aos css file cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+        <!-- bootstrap cdn link -->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap-grid.min.css">
+
+        <!-- font awesome cdn link -->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <!-- custom css file link -->
+        <link rel = "stylesheet" href = "static/css/style.css">
+
+    </head>
+    <body>
+
+        <!-- header section starts -->
+        <header>
+            <div class="container">
+                <a href="#" class="logo"><span>D</span>oc<span>D</span>iagno.</a>
+        
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="{{ url_for('profile') }}">Profile</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#facility">facility</a></li>
+                        <li><a href="#our_team">our team</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="fas fa-bars"></div>
+            </div>
+        </header>
+
+        <!-- header section ends -->
+
+        <!-- home section starts -->
+
+        <section class="home" id="home">
+
+            <div class="container">
+                <div class="row min-vh-100 align-items-center text-center text-md-left">
+
+                    <div class="col-md-6 pr-md-5" data-aos="zoom-in">
+                        <img src = "static/images/home-svg.svg" width = "100%" alt = "">
+                    </div>
+
+                    <div class="col-md-6 pl-md-5 content" data-aos="fade-left">
+                        <h1><span>Stay</span> Safe, <span>Stay</span> Healthy.</h1>
+                        <h3>Cure Diseases Before It Starts.</h3>
+                        <a href="#"><button class="button">Learn more</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- home section ends -->
+
+        <!-- about section start -->
+
+        <section class = "about" id = "about">
+            <div class="container">
+                
+                <div class="row min-vh-100 align-items-center">
+
+                    <div class="col-md-6 content" data-aos="fade-right">
+                        <div class="box">
+                            <h3> <i class="fas fa-heartbeat"></i> Heart Diseases </h3>
+                        </div>
+
+                        <div class="box">
+                            <h3> <i class="fas fa-plus-square"></i> Diabetes Diseases </h3>
+                        </div>
+            
+                        <div class="box">
+                            <h3> <i class="fas fa-stethoscope"></i> Free Check-ups </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 d-none d-md-block" data-aos="fade-left">
+                        <img src="static/images/about1.png" width="100%" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- about section ends -->
+
+        <!-- facility section start -->
+
+        <section class="facility" id="facility">
+            <div class="container">
+                <h1 class="heading"><span></span> Our Facilities <span></span></h1>
+                <div class="box-container">
+
+                    <div class="box" data-aos="zoom-in">
+                        <a href="{{ url_for('heart') }}" title="Our Heart Prediction">
+                            <img src="static/images/heart3.jpg" alt="Heart Diseases Prediction">
+                        </a>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in">
+                        <a href="{{ url_for('diabetes') }}" title="Our Diabetes Prediction">
+                            <img src="static/images/33.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in">
+                        <a href="{{ url_for('healthtips')}}" title="Health Tips">
+                            <img src="static/images/health_tips.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- facility section ends -->
+        
+        <!-- review section starts -->
+
+        <section class="our_team" id="our_team">
+            <div class="container">
+                <h1 class="heading"> Our Team </h1>
+                <div class="box-container">
+
+                    <div class="box" data-aos="fade-right">
+                        <img src="static/images/Aditya.jpg" alt="">
+                        <h3>Aditya Pawar</h3>
+                    </div>
+
+                    <div class="box" data-aos="fade-up">
+                        <img src="static/images/yash.jpg" alt="">
+                        <h3>Yashvardhan Kapse</h3>
+                    </div>
+
+                    <div class="box" data-aos="fade-down">
+                        <img src="static/images/Hrushikesh.jpg" alt="">
+                        <h3>Rushikesh Tonpe</h3>
+                    </div>
+
+                    <div class="box" data-aos="fade-left">
+                        <img src="static/images/hifaz.jpg" alt="">
+                        <h3>Hifaz Khan</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- review section ends -->
+
+        <!-- counter section starts-->
+
+
+        <!-- counter section ends -->
+
+        <!-- contact section starts -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h1 class="heading"><span></span> Connect <span></span></h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-10" data-aos="flip-down">
+                        <form action="{{ url_for('send_email') }}" method="post">
+                            <div class="inputBox">
+                                <input type="text" name="full_name" placeholder="Full Name" required>
+                                <input type="number" name="phone_number" placeholder="Phone Number" required>
+                            </div>
+        
+                            <div class="inputBox">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                                <input type="text" name="address" placeholder="Address" required>
+                            </div>
+        
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message (optional)"></textarea>
+                            <input type="submit" value="Connect" class="button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- contact section ends -->
+
+        <!-- footer section starts -->
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right">
+                        <a href="#" class="logo"><span>D</span>oc<span>D</span>iagno.</a>
+                        <p>Get the best healthcare experience, without having to leave home.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center" data-aos="fade-up">
+                        <h3>links</h3>
+                        <a href="#">home</a>
+                        <a href="#">about</a>
+                        <a href="#">facility</a>
+                        <a href="#">our team</a>
+                        <a href="#">contact</a>
+                    </div>
+
+                    <div class="col-md-4 text-center" data-aos="fade-left">
+                        <h3>share</h3>
+                        <a href="#">facebook</a>
+                        <a href="#">twitter</a>
+                        <a href="#">instagram</a>
+                        <a href="#">github</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <h1 class="credit text-center mx-auto">created by <span>Group B-12</span> | all rights reserved.</h1>
+
+        </section>
+
+        <!-- footer section ends -->
+
+        <!-- jguery cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <!-- aos js file cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+        <!-- custom js link -->
+        <script src="static/scripts/main.js"></script>
+
+        <script>
+            AOS.init({
+                duration:1000,
+                delay:400
+            });
+
+        </script>
+
+    </body>
+</html>

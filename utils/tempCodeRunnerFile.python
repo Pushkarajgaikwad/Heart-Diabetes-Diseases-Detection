@@ -1,0 +1,31 @@
+from selenium import webdriver
+import time
+
+# Optional: Set the path to the WebDriver executable (if needed)
+# For example, for Edge WebDriver:
+# driver_path = "path/to/your/msedgedriver.exe"
+
+# Create the WebDriver instance
+driver = webdriver.Edge()  # Replace with webdriver.Firefox() or webdriver.Edge() if needed
+
+# Access WhatsApp Web
+driver.get("https://web.whatsapp.com/")
+
+# Set the session cookie
+session_cookie = {
+    "name": "session",  # Replace with the actual cookie name
+    "value": "your_session_cookie_value",  # Replace with the actual cookie value
+}
+
+driver.add_cookie(session_cookie)
+
+# (Optional) Maximize the browser window
+driver.maximize_window()
+
+# (Optional) Do something with the browser (e.g., find elements, interact with the page)
+
+# Add a delay to keep the browser window open for a while (e.g., 30 seconds)
+time.sleep(30)
+
+# Now close the browser
+driver.quit()

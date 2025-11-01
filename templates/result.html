@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: url(/static/images/b1.jpg);
+            background-repeat: no-repeat;
+            margin-top: 20;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+        table {
+            margin: 50px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1><b>{{ prediction }}</b></h1>
+
+{% if prediction != "No significant risk detected. Maintain your healthy lifestyle." %}
+    {% if exceeded_parameters %}
+    <table>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>User Input</th>
+                <th>Normal Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for parameter, values in exceeded_parameters.items() %}
+            <tr>
+                <td>{{ parameter }}</td>
+                <td>{{ values[0] }}</td>
+                <td>{{ values[1][0] }} - {{ values[1][1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No parameters exceeded the normal range.</p>
+    {% endif %}
+{% endif %}
+
+</body>
+</html>
