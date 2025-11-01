@@ -36,4 +36,4 @@ This project uses data from the Framingham and Cleveland heart disease studies (
  
     * ## 👥 Contributors
 * Pushkaraj Gaikwad
-* Nidhi Raut
+* Nidhi Raut.
